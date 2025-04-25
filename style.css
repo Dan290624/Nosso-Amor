@@ -1,0 +1,109 @@
+body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.spotify-bar {
+    background: #1db954;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.capa {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.info-musica {
+    text-align: left;
+}
+
+.info-musica h4, .info-musica p {
+    margin: 0;
+}
+
+.player-controles button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+.foto-casal img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+#contador {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+
+.declaracao {
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Corações flutuando soft */
+.coracoes-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.coracao {
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    background: url('imagens/coracao.png') no-repeat center/contain;
+    opacity: 0.8; /* Quase totalmente visível */
+    animation: flutuar linear infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}

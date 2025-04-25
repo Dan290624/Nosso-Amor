@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosso Amor</title>
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra de música estilo Spotify -->
+    <div class="spotify-bar">
+        <img src="imagens/capa-musica.jpg.jpeg" alt="Capa da Música" class="capa">
+        <div class="info-musica">
+            <h4>A Gente Nem Ficou</h4>
+            <p>Jorge e Mateus</p>
+        </div>
+        <div class="player-controles">
+            <button onclick="tocarOuPausar()">▶️⏸️</button>
+        </div>
+    </div>
+
+    <!-- Áudio escondido -->
+    <audio id="audio" loop>
+        <source src="audio/musica.mp3.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <!-- Corações caindo -->
+    <div class="coracoes-container"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <div class="foto-casal">
+            <img src="imagens/foto-casal.jpg.JPG" alt="Nosso Amor">
+        </div>
+
+        <h2>❤️ Eu te amo há:</h2>
+
+        <div id="contador"></div>
+
+        <hr>
+
+        <p class="declaracao">
+            A cada dia que passa, meu coração se enche mais de carinho e admiração por você, 
+            muito obrigado por ter entrado em minha vida amor, fico todos os dias imaginando nós nos casando e viajando mundo a fora
+            o seu sorriso facilmente iluminaria a escuridão do universo e o castanho dos seus olhos seria capaz de acender uma cidade 
+            inteira, obrigado por me escolher e continuar ao meu lado, nenhuma briga ou qualquer tipo de desentendimento irá
+            nos afastar, pois o amor que temos um no outro juntamente com a vontade de Deus nos deixará juntos para sempre
+            sou muito feliz ao seu lado, obrigado por me proporcionar momentos incriveis. Aceite esse presente eterno como 
+            minha humilde forma de carinho por você.
+        </p>
+    </div>
+
+    <!-- Link do JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
